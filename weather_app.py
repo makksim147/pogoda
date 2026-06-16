@@ -45,5 +45,5 @@ result = get_weather("Moscow", API_KEY)
 print("Город Москва:", result)
     
 # Тест 2: Несуществующий город
-result = get_weather("AlabugaPolitex", API_KEY)
+result = get_weather("MPT", API_KEY)
 print("Неверный город:", result)
