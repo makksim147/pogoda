@@ -1,4 +1,5 @@
 import requests
+from api_key import API_KEY1
 
 def get_weather(city, api_key):
     url = "https://api.openweathermap.org/data/2.5/weather"
@@ -35,8 +36,7 @@ def get_weather(city, api_key):
         return {"ошибка": "Нет подключения к интернету"}
     except Exception as e:
         return {"ошибка": str(e)}
-
-API_KEY = "6c385940d87fee9f5822dc6b88ee516e"  
+API_KEY = API_KEY1
     
 print("Тестируем get_weather()...")
     
